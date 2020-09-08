@@ -94,7 +94,7 @@ esquisserUI <- function(id, header = TRUE,
         dragulaInput(
           inputId = ns("dragvars"),
           sourceLabel = "Biến số",
-          targetsLabels = c("X", "Y", "Nền", "Màu", "Kích thước", "Nhóm", "Khung", "Khung dòng", "Khung cột"),
+          targetsLabels = c("X", "Y", "Nền", "Màu", "K.thước", "Nhóm", "Khung", "Dòng", "Cột"),
           targetsIds = c("xvar", "yvar", "fill", "color", "size", "group", "facet", "facet_row", "facet_col"),
           choices = "",
           badge = FALSE,
