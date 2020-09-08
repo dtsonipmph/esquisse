@@ -520,7 +520,7 @@ controls_params <- function(ns) {
       ),
       materialSwitch(
         inputId = ns("smooth_add"), 
-        label = "Smooth line:",
+        label = "Làm mượt:",
         right = TRUE, 
         status = "primary"
       )
@@ -539,7 +539,7 @@ controls_params <- function(ns) {
       id = ns("controls-facet"), style = "display: none;",
       prettyRadioButtons(
         inputId = ns("facet_scales"),
-        label = "Facet scales:", 
+        label = "Kích thước khung:", 
         inline = TRUE,
         status = "primary", 
         choices = c("fixed", "free", "free_x", "free_y"),
@@ -548,7 +548,7 @@ controls_params <- function(ns) {
       ),
       sliderInput(
         inputId = ns("facet_ncol"),
-        label = "Facet ncol:",
+        label = "Số lượng cột khung:",
         min = 0, max = 10,
         value = 0, step = 1
       ),
@@ -563,7 +563,7 @@ controls_params <- function(ns) {
       id = ns("controls-histogram"), style = "display: none;",
       sliderInput(
         inputId = ns("bins"), 
-        label = "Numbers of bins:", 
+        label = "Số lượng cột:", 
         min = 10, max = 100,
         value = 30, 
         width = "100%"
@@ -573,7 +573,7 @@ controls_params <- function(ns) {
       id = ns("controls-violin"), style = "display: none;",
       prettyRadioButtons(
         inputId = ns("scale"),
-        label = "Scale:", 
+        label = "Kích thước:", 
         inline = TRUE,
         status = "primary", 
         choices = c("area", "count", "width"),
@@ -585,7 +585,7 @@ controls_params <- function(ns) {
       id = ns("controls-scale-trans-x"), style = "display: none;",
       numericRangeInput(
         inputId = ns("xlim"), 
-        label = "X-Axis limits (empty for none):",
+        label = "Giới hạn trục X (empty for none):",
         value = c(NA, NA)
       ),
       selectInput(
@@ -600,7 +600,7 @@ controls_params <- function(ns) {
       id = ns("controls-scale-trans-y"), style = "display: none;",
       numericRangeInput(
         inputId = ns("ylim"), 
-        label = "Y-Axis limits (empty for none):",
+        label = "Giới hạn trục Y (empty for none):",
         value = c(NA, NA)
       ),
       selectInput(
